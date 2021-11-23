@@ -29,7 +29,7 @@ Password: 1F00d{P13c3_0f_C4k3}
 - An IAM policy documet
 - An IAM Role 
 
-## Arquitetura
+## Architecture
 
 ![Project Architecture](images/architecture.png)
 
