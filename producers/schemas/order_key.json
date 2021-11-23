@@ -1,0 +1,12 @@
+{
+    "namespace": "com.ifood",
+    "type": "record",
+    "name": "order.key",
+    "fields": [
+      {
+        "name": "timestamp",
+        "type": "long"
+      }
+    ]
+}
+    

@@ -1,0 +1,11 @@
+{
+    "namespace": "com.ifood",
+    "type": "record",
+    "name": "restaurant.key",
+    "fields": [
+      {
+        "name": "timestamp",
+        "type": "long"
+      }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "type": "record",
+    "name": "restaurant.value",
+    "namespace": "com.ifood.restaurant",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "created_at",
+            "type": "string"
+        },
+        {
+            "name": "enabled",
+            "type": "boolean"
+        },
+        {
+            "name": "price_range",
+            "type": "long"
+        },
+        {
+            "name": "average_ticket",
+            "type": "double"
+        },
+        {
+            "name": "takeout_time",
+            "type": "double"
+        },
+        {
+            "name": "delivery_time",
+            "type": "double"
+        },
+        {
+            "name": "minimum_order_value",
+            "type": "double"
+        },
+        {
+            "name": "merchant_zip_code",
+            "type": "long"
+        },
+        {
+            "name": "merchant_city",
+            "type": "string"
+        },
+        {
+            "name": "merchant_state",
+            "type": "string"
+        },
+        {
+            "name": "merchant_country",
+            "type": "string"
+        },
+        {
+            "name": "event_time",
+            "type": "long"
+        }
+    ]
+}

@@ -1,0 +1,218 @@
+{
+    "type": "record",
+    "name": "order.value",
+    "namespace": "com.ifood.order",
+    "fields": [
+        {
+            "name": "cpf",
+            "type": ["null", "double"]
+        },
+        {
+            "name": "customer_id",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "customer_name",
+            "type": ["null", "string"]
+        },  
+        {
+            "name": "delivery_address_city",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "delivery_address_country",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "delivery_address_district",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "delivery_address_external_id",
+            "type": ["null", "long"]
+        },
+        {
+            "name": "delivery_address_latitude",
+            "type": ["null", "double"]
+        },
+        {
+            "name": "delivery_address_longitude",
+            "type": ["null", "double"]
+        },
+        {
+            "name": "delivery_address_state",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "delivery_address_zip_code",
+            "type": ["null", "long"]
+        },
+        {
+            "name": "items",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "item",
+                    "fields": [
+                        {
+                            "name":"name",
+                            "type":["null", "string"]
+                        },
+                        {
+                            "name": "addition",
+                            "type": {
+                                "type": "record",
+                                "name": "valueMonetary",
+                                "fields": [
+                                    {
+                                        "name": "value",
+                                        "type": ["null", "string"]
+                                    },
+                                    {
+                                        "name": "currency",
+                                        "type": ["null", "string"]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "discount",
+                            "type": "valueMonetary"
+                        },
+                        {
+                            "name": "quantity",
+                            "type": ["null", "double"]
+                        },
+                        {
+                            "name": "sequence",
+                            "type": ["null", "int"]
+                        },
+                        {
+                            "name": "unitPrice",
+                            "type": "valueMonetary"
+                        },
+                        {
+                            "name": "externalId",
+                            "type": ["null", "string"]
+                        },
+                        {
+                            "name": "totalValue",
+                            "type": "valueMonetary"
+                        },
+                        {
+                            "name": "customerNote",
+                            "type": ["null", "string"]
+                        },
+                        {
+                            "name": "garnishItems",
+                            "type": {
+                                "type": "array",
+                                "items": {
+                                    "type": "record",
+                                    "name": "garnishItem",
+                                    "fields": [
+                                        {
+                                           "name": "name",
+                                           "type": ["null", "string"]
+                                        },
+                                        {
+                                            "name": "addition",
+                                            "type": "valueMonetary"
+                                        },
+                                        {
+                                            "name": "discount",
+                                            "type": "valueMonetary"
+                                        },
+                                        {
+                                            "name": "quantity",
+                                            "type": ["null", "double"]
+                                        },
+                                        {
+                                            "name": "sequence",
+                                            "type": ["null", "int"]
+                                        },
+                                        {
+                                            "name": "unitPrice",
+                                            "type": "valueMonetary"
+                                        },
+                                        {
+                                            "name": "categoryId",
+                                            "type": ["null", "string"]
+                                        },
+                                        {
+                                            "name": "totalValue",
+                                            "type": "valueMonetary"
+                                        },
+                                        {
+                                            "name": "categoryName",
+                                            "type": ["null", "string"]
+                                        },
+                                        {
+                                            "name": "integrationId",
+                                            "type": ["null", "string"]
+                                        }
+                                    ]
+                                },
+                                "java-class": "java.util.List"
+                            }
+                        },
+                        {
+                            "name": "integrationId",
+                            "type": ["null", "string"]
+                        },
+                        {
+                            "name": "totalAddition",
+                            "type": "valueMonetary"
+                        },
+                        {
+                            "name": "totalDiscount",
+                            "type": "valueMonetary"
+                        }
+                    ]
+                },
+                "java-class": "java.util.List"
+            }
+        },
+        {
+            "name": "merchant_id",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "merchant_latitude",
+            "type": ["null", "double"]
+        },
+        {
+            "name": "merchant_longitude",
+            "type": ["null", "double"]
+        },
+        {
+            "name": "merchant_timezone",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "order_created_at",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "order_id",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "order_scheduled",
+            "type": "boolean"
+        },
+        {
+            "name": "order_total_amount",
+            "type": ["null", "double"]
+        },
+        {
+            "name": "origin_platform",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "event_time",
+            "type": "long"
+        }
+    ]
+}

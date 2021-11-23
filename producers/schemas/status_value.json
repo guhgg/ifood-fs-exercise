@@ -1,0 +1,27 @@
+{
+    "type": "record",
+    "name": "status.value",
+    "namespace": "com.ifood.consumer",
+    "fields": [
+        {
+            "name": "created_at",
+            "type": "string"
+        },
+        {
+            "name": "order_id",
+            "type": "string"
+        },
+        {
+            "name": "status_id",
+            "type": "string"
+        },
+        {
+            "name": "value",
+            "type": "string"
+        },
+        {
+            "name": "event_time",
+            "type": "long"
+        }
+    ]
+}
